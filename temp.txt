@@ -1,0 +1,27 @@
+(venv_deepl) ichbinwil@ichbinwil:~/kode_kuliah/ollama-deepl$ python3 src/zero_shot.py 
+100%|███████████████████████████████████████| 100/100 [2:20:41<00:00, 84.42s/it]
+
+===== ZERO SHOT RESULT =====
+   score  predicted_score
+0      3                2
+1      3                4
+2      4                4
+3      4                4
+4      3                4
+
+(venv_deepl) ichbinwil@ichbinwil:~/kode_kuliah/ollama-deepl$ python3 src/few_shot.py 
+100%|███████████████████████████████████████| 100/100 [2:34:21<00:00, 92.62s/it]
+
+===== FEW SHOT RESULT =====
+   score  predicted_score
+0      3                4
+1      3                4
+2      4                4
+3      4                5
+4      3                4
+
+(venv_deepl) ichbinwil@ichbinwil:~/kode_kuliah/ollama-deepl$ python3 src/evaluate.py 
+
+========== EVALUATION ==========
+Zero-Shot QWK : 0.3086
+Few-Shot  QWK : 0.1570
